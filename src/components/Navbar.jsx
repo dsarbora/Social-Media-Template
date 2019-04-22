@@ -6,8 +6,8 @@ function Navbar() {
   }
   let buttonStyles = {
     padding: '10px 10px 10px 10px',
-    backgroundColor: 'white'
-  }
+    backgroundColor: 'white',
+    width: '100px'  }
   let searchbarStyles = {
     height: '30px',
     marginRight: '40px',
@@ -16,7 +16,7 @@ function Navbar() {
   }
   let borderRadius = {
     borderRadius: '15px 15px 15px 15px',
-    border: '3px solid #34abef'
+    border: '2px solid #34abef'
   }
   return (
     <div>
