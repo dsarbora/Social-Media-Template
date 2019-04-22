@@ -9,7 +9,8 @@ function App() {
   let columns = {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
-    gridGap: "10px"
+    marginLeft: '25px',
+    marginRight: '25px'
   }
   return (
     <div>
