@@ -4,7 +4,7 @@
 #### A basic social media template
 
 ## Description
-This web page was created with React, using multiple components
+This web page was created with React, using multiple components and is a basic layout for a socail media site with no functionailty.
 
 ## Specifications
 * No functionality yet
