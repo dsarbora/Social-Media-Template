@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from "prop-types";
 
-function Friend(){
+function Friend(props){
   let image = {
     width: '60x',
     height: '60px',
@@ -24,14 +25,19 @@ function Friend(){
   return(
     <div style={columns}>
       <div>
-        <img style={image} src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"/>
+        <img style={image} src={props.img}/>
       </div>
       <div style={raised}>
-        <h4>Donec eu orci et</h4>
+        <h4>{props.text}</h4>
         <button style={buttonStyle}>Button</button>
       </div>
     </div>
   );
 }
+
+Friend.propTypes={
+  img: PropTypes.string,
+  text: PropTypes.string
+};
 
 export default Friend;

@@ -10,9 +10,15 @@ function FriendList(){
   return(
     <div style={container}>
       <h4>Lorem ipsum</h4>
-      <Friend/>
-      <Friend/>
-      <Friend/>
+      <Friend
+      img="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+      text="Donec eu orci et"/>
+      <Friend
+      img="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+      text="Donec eu orci et"/>
+      <Friend
+      img="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+      text="Donec eu orci et"/>
     </div>
   );
 }

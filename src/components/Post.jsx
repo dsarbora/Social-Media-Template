@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function Post(props) {
   let image = {
@@ -30,6 +31,12 @@ function Post(props) {
       </div>
     </div>
   );
+}
+
+Post.propTypes = {
+  img: PropTypes.string,
+  name: PropTypes.string,
+  text: PropTypes.string
 }
 
 export default Post;
