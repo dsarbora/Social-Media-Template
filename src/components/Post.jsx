@@ -5,15 +5,29 @@ function Post() {
     width: '50px',
     height: '50px',
     float: 'left',
-    padding: '0 10px 0 10px'
+    padding: '0 10px 0 10px',
+    marginTop: '15px'
   }
   let text = {
-    paddingLeft: '10px'
+    paddingLeft: '10px',
+    marginTop: '-10px'
+  }
+  let border={
+    border: '1px solid lightgray',
+    display: 'grid',
+    gridTemplateColumns: '1fr 4fr'
+  }
+  let name={
+    marginLeft: '10px',
+    
   }
   return (
-    <div>
+    <div style={border}>
       <img style={image} src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"/>
-      <p style={text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis impedit at sunt. Omnis deserunt quod eveniet, quidem voluptatem itaque ad quos quam id. Quibusdam ea recusandae, velit quo et labore!</p>
+      <div>
+        <p style={name}><strong>Lorem Ipsum</strong></p>
+        <p style={text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nullam</p>
+      </div>
     </div>
   );
 }
