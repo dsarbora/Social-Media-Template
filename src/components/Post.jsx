@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Post() {
+function Post(props) {
   let image = {
     width: '50px',
     height: '50px',
@@ -23,10 +23,10 @@ function Post() {
   }
   return (
     <div style={border}>
-      <img style={image} src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"/>
+      <img style={image} src={props.img}/>
       <div>
-        <p style={name}><strong>Lorem Ipsum</strong></p>
-        <p style={text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nullam</p>
+        <p style={name}><strong>{props.name}</strong></p>
+        <p style={text}>{props.text}</p>
       </div>
     </div>
   );
