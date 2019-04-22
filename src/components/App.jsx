@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import Badge from './Badge';
 import Bio from './Bio';
 import Feed from './Feed'
+import FriendList from './FriendList';
 
 function App() {
   let columns = {
@@ -22,7 +23,7 @@ function App() {
           <Feed/>
         </div> 
         <div>
-
+          <FriendList/>
         </div>
       </div>
     </div>
